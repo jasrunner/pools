@@ -1,0 +1,494 @@
+{
+   "fixtures":[
+      {
+         "home_team":"Arsenal",
+         "away_team":"Burnley",
+         "number":1,
+         "kickoff":"2018-05-06T16:30:00.000+01:00",
+         "away_team_display":"Burnley",
+         "home_team_display":"Arsenal",
+         "external_id":"2523103",
+         "id":104219
+      },
+      {
+         "home_team":"Bournemouth",
+         "away_team":"Swansea",
+         "number":2,
+         "kickoff":"2018-05-05T15:00:00.000+01:00",
+         "away_team_display":"Swansea",
+         "home_team_display":"Bournemouth",
+         "external_id":"2523104",
+         "id":104220
+      },
+      {
+         "home_team":"Brighton & Hove Albion",
+         "away_team":"Man Utd",
+         "number":3,
+         "kickoff":"2018-05-04T20:00:00.000+01:00",
+         "away_team_display":"Man Utd",
+         "home_team_display":"Brighton",
+         "external_id":"2523105",
+         "id":104221
+      },
+      {
+         "home_team":"Chelsea",
+         "away_team":"Liverpool",
+         "number":4,
+         "kickoff":"2018-05-06T16:30:00.000+01:00",
+         "away_team_display":"Liverpool",
+         "home_team_display":"Chelsea",
+         "external_id":"2523106",
+         "id":104222
+      },
+      {
+         "home_team":"Everton",
+         "away_team":"Southampton",
+         "number":5,
+         "kickoff":"2018-05-05T17:30:00.000+01:00",
+         "away_team_display":"Southampton",
+         "home_team_display":"Everton",
+         "external_id":"2523107",
+         "id":104223
+      },
+      {
+         "home_team":"Leicester",
+         "away_team":"West Ham",
+         "number":6,
+         "kickoff":"2018-05-05T15:00:00.000+01:00",
+         "away_team_display":"West Ham",
+         "home_team_display":"Leicester",
+         "external_id":"2523108",
+         "id":104224
+      },
+      {
+         "home_team":"Man City",
+         "away_team":"Huddersfield",
+         "number":7,
+         "kickoff":"2018-05-06T13:30:00.000+01:00",
+         "away_team_display":"Huddersfield",
+         "home_team_display":"Man City",
+         "external_id":"2523109",
+         "id":104225
+      },
+      {
+         "home_team":"Stoke",
+         "away_team":"Crystal P",
+         "number":8,
+         "kickoff":"2018-05-05T12:30:00.000+01:00",
+         "away_team_display":"Crystal P",
+         "home_team_display":"Stoke",
+         "external_id":"2523110",
+         "id":104226
+      },
+      {
+         "home_team":"Watford",
+         "away_team":"Newcastle",
+         "number":9,
+         "kickoff":"2018-05-05T15:00:00.000+01:00",
+         "away_team_display":"Newcastle",
+         "home_team_display":"Watford",
+         "external_id":"2523111",
+         "id":104227
+      },
+      {
+         "home_team":"West Brom",
+         "away_team":"Tottenham",
+         "number":10,
+         "kickoff":"2018-05-05T15:00:00.000+01:00",
+         "away_team_display":"Tottenham",
+         "home_team_display":"West Brom",
+         "external_id":"2523112",
+         "id":104228
+      },
+      {
+         "home_team":"Birmingham",
+         "away_team":"Fulham",
+         "number":11,
+         "kickoff":"2018-05-06T12:30:00.000+01:00",
+         "away_team_display":"Fulham",
+         "home_team_display":"Birmingham",
+         "external_id":"2529726",
+         "id":106006
+      },
+      {
+         "home_team":"Bolton",
+         "away_team":"Nott'm F",
+         "number":12,
+         "kickoff":"2018-05-06T12:30:00.000+01:00",
+         "away_team_display":"Nottingham F",
+         "home_team_display":"Bolton",
+         "external_id":"2529727",
+         "id":106007
+      },
+      {
+         "home_team":"Brentford",
+         "away_team":"Hull",
+         "number":13,
+         "kickoff":"2018-05-06T12:30:00.000+01:00",
+         "away_team_display":"Hull",
+         "home_team_display":"Brentford",
+         "external_id":"2529728",
+         "id":106008
+      },
+      {
+         "home_team":"Bristol C",
+         "away_team":"Sheff Utd",
+         "number":14,
+         "kickoff":"2018-05-06T12:30:00.000+01:00",
+         "away_team_display":"Sheff Utd",
+         "home_team_display":"Bristol C",
+         "external_id":"2529729",
+         "id":106009
+      },
+      {
+         "home_team":"Cardiff",
+         "away_team":"Reading",
+         "number":15,
+         "kickoff":"2018-05-06T12:30:00.000+01:00",
+         "away_team_display":"Reading",
+         "home_team_display":"Cardiff",
+         "external_id":"2529730",
+         "id":106010
+      },
+      {
+         "home_team":"Derby",
+         "away_team":"Barnsley",
+         "number":16,
+         "kickoff":"2018-05-06T12:30:00.000+01:00",
+         "away_team_display":"Barnsley",
+         "home_team_display":"Derby",
+         "external_id":"2529731",
+         "id":106011
+      },
+      {
+         "home_team":"Ipswich",
+         "away_team":"Middlesbrough",
+         "number":17,
+         "kickoff":"2018-05-06T12:30:00.000+01:00",
+         "away_team_display":"Middlesbrough",
+         "home_team_display":"Ipswich",
+         "external_id":"2529732",
+         "id":106012
+      },
+      {
+         "home_team":"Leeds United",
+         "away_team":"QPR",
+         "number":18,
+         "kickoff":"2018-05-06T12:30:00.000+01:00",
+         "away_team_display":"QPR",
+         "home_team_display":"Leeds United",
+         "external_id":"2529733",
+         "id":106013
+      },
+      {
+         "home_team":"Millwall",
+         "away_team":"Aston Villa",
+         "number":19,
+         "kickoff":"2018-05-06T12:30:00.000+01:00",
+         "away_team_display":"Aston Villa",
+         "home_team_display":"Millwall",
+         "external_id":"2529734",
+         "id":106014
+      },
+      {
+         "home_team":"Preston North End",
+         "away_team":"Burton A",
+         "number":20,
+         "kickoff":"2018-05-06T12:30:00.000+01:00",
+         "away_team_display":"Burton A",
+         "home_team_display":"Preston",
+         "external_id":"2529735",
+         "id":106015
+      },
+      {
+         "home_team":"Sheff Wed",
+         "away_team":"Norwich",
+         "number":21,
+         "kickoff":"2018-05-06T12:30:00.000+01:00",
+         "away_team_display":"Norwich",
+         "home_team_display":"Sheff Wed",
+         "external_id":"2529736",
+         "id":106016
+      },
+      {
+         "home_team":"Sunderland",
+         "away_team":"Wolves",
+         "number":22,
+         "kickoff":"2018-05-06T12:30:00.000+01:00",
+         "away_team_display":"Wolves",
+         "home_team_display":"Sunderland",
+         "external_id":"2529737",
+         "id":106017
+      },
+      {
+         "home_team":"AFC Wimbledon",
+         "away_team":"Bury",
+         "number":23,
+         "kickoff":"2018-05-05T17:30:00.000+01:00",
+         "away_team_display":"Bury",
+         "home_team_display":"AFC Wimbledon",
+         "external_id":"2530277",
+         "id":106550
+      },
+      {
+         "home_team":"Blackburn Rovers",
+         "away_team":"Oxford United",
+         "number":24,
+         "kickoff":"2018-05-05T17:30:00.000+01:00",
+         "away_team_display":"Oxford United",
+         "home_team_display":"Blackburn Rovers",
+         "external_id":"2530278",
+         "id":106551
+      },
+      {
+         "home_team":"Doncaster",
+         "away_team":"Wigan A",
+         "number":25,
+         "kickoff":"2018-05-05T17:30:00.000+01:00",
+         "away_team_display":"Wigan A",
+         "home_team_display":"Doncaster",
+         "external_id":"2530279",
+         "id":106552
+      },
+      {
+         "home_team":"Fleetwood",
+         "away_team":"Walsall",
+         "number":26,
+         "kickoff":"2018-05-05T17:30:00.000+01:00",
+         "away_team_display":"Walsall",
+         "home_team_display":"Fleetwood",
+         "external_id":"2530280",
+         "id":106553
+      },
+      {
+         "home_team":"Gillingham",
+         "away_team":"Plymouth Argyle",
+         "number":27,
+         "kickoff":"2018-05-05T17:30:00.000+01:00",
+         "away_team_display":"Plymouth",
+         "home_team_display":"Gillingham",
+         "external_id":"2530281",
+         "id":106554
+      },
+      {
+         "home_team":"Northampton",
+         "away_team":"Oldham",
+         "number":28,
+         "kickoff":"2018-05-05T17:30:00.000+01:00",
+         "away_team_display":"Oldham",
+         "home_team_display":"Northampton",
+         "external_id":"2530282",
+         "id":106555
+      },
+      {
+         "home_team":"Portsmouth",
+         "away_team":"Peterboro",
+         "number":29,
+         "kickoff":"2018-05-05T17:30:00.000+01:00",
+         "away_team_display":"Peterboro",
+         "home_team_display":"Portsmouth",
+         "external_id":"2530283",
+         "id":106556
+      },
+      {
+         "home_team":"Rochdale",
+         "away_team":"Charlton",
+         "number":30,
+         "kickoff":"2018-05-05T17:30:00.000+01:00",
+         "away_team_display":"Charlton",
+         "home_team_display":"Rochdale",
+         "external_id":"2530284",
+         "id":106557
+      },
+      {
+         "home_team":"Rotherham United",
+         "away_team":"Blackpool",
+         "number":31,
+         "kickoff":"2018-05-05T17:30:00.000+01:00",
+         "away_team_display":"Blackpool",
+         "home_team_display":"Rotherham Utd",
+         "external_id":"2530285",
+         "id":106558
+      },
+      {
+         "home_team":"Scunthorpe",
+         "away_team":"Bradford C",
+         "number":32,
+         "kickoff":"2018-05-05T17:30:00.000+01:00",
+         "away_team_display":"Bradford C",
+         "home_team_display":"Scunthorpe",
+         "external_id":"2530286",
+         "id":106559
+      },
+      {
+         "home_team":"Shrewsbury",
+         "away_team":"Milton K Dons",
+         "number":33,
+         "kickoff":"2018-05-05T17:30:00.000+01:00",
+         "away_team_display":"MK Dons",
+         "home_team_display":"Shrewsbury",
+         "external_id":"2530287",
+         "id":106560
+      },
+      {
+         "home_team":"Southend",
+         "away_team":"Bristol R",
+         "number":34,
+         "kickoff":"2018-05-05T17:30:00.000+01:00",
+         "away_team_display":"Bristol R",
+         "home_team_display":"Southend",
+         "external_id":"2530288",
+         "id":106561
+      },
+      {
+         "home_team":"Barnet",
+         "away_team":"Chesterfield",
+         "number":35,
+         "kickoff":"2018-05-05T15:00:00.000+01:00",
+         "away_team_display":"Chesterfield",
+         "home_team_display":"Barnet",
+         "external_id":"2530830",
+         "id":107101
+      },
+      {
+         "home_team":"Cambridge U",
+         "away_team":"Port Vale",
+         "number":36,
+         "kickoff":"2018-05-05T15:00:00.000+01:00",
+         "away_team_display":"Port Vale",
+         "home_team_display":"Cambridge U",
+         "external_id":"2530831",
+         "id":107102
+      },
+      {
+         "home_team":"Carlisle",
+         "away_team":"Newport Co",
+         "number":37,
+         "kickoff":"2018-05-05T15:00:00.000+01:00",
+         "away_team_display":"Newport Co",
+         "home_team_display":"Carlisle",
+         "external_id":"2530832",
+         "id":107103
+      },
+      {
+         "home_team":"Coventry",
+         "away_team":"Morecambe",
+         "number":38,
+         "kickoff":"2018-05-05T15:00:00.000+01:00",
+         "away_team_display":"Morecambe",
+         "home_team_display":"Coventry",
+         "external_id":"2530833",
+         "id":107104
+      },
+      {
+         "home_team":"Crewe",
+         "away_team":"Cheltenham",
+         "number":39,
+         "kickoff":"2018-05-05T15:00:00.000+01:00",
+         "away_team_display":"Cheltenham",
+         "home_team_display":"Crewe",
+         "external_id":"2530834",
+         "id":107105
+      },
+      {
+         "home_team":"Exeter",
+         "away_team":"Colchester",
+         "number":40,
+         "kickoff":"2018-05-05T15:00:00.000+01:00",
+         "away_team_display":"Colchester",
+         "home_team_display":"Exeter",
+         "external_id":"2530835",
+         "id":107106
+      },
+      {
+         "home_team":"Forest Green",
+         "away_team":"Grimsby",
+         "number":41,
+         "kickoff":"2018-05-05T15:00:00.000+01:00",
+         "away_team_display":"Grimsby",
+         "home_team_display":"Forest Green",
+         "external_id":"2530836",
+         "id":107107
+      },
+      {
+         "home_team":"Lincoln",
+         "away_team":"Yeovil",
+         "number":42,
+         "kickoff":"2018-05-05T15:00:00.000+01:00",
+         "away_team_display":"Yeovil",
+         "home_team_display":"Lincoln",
+         "external_id":"2530837",
+         "id":107108
+      },
+      {
+         "home_team":"Mansfield",
+         "away_team":"Crawley",
+         "number":43,
+         "kickoff":"2018-05-05T15:00:00.000+01:00",
+         "away_team_display":"Crawley",
+         "home_team_display":"Mansfield",
+         "external_id":"2530838",
+         "id":107109
+      },
+      {
+         "home_team":"Notts County",
+         "away_team":"Luton",
+         "number":44,
+         "kickoff":"2018-05-05T15:00:00.000+01:00",
+         "away_team_display":"Luton",
+         "home_team_display":"Notts County",
+         "external_id":"2530839",
+         "id":107110
+      },
+      {
+         "home_team":"Swindon",
+         "away_team":"Accrington",
+         "number":45,
+         "kickoff":"2018-05-05T15:00:00.000+01:00",
+         "away_team_display":"Accrington",
+         "home_team_display":"Swindon",
+         "external_id":"2530840",
+         "id":107111
+      },
+      {
+         "home_team":"Wycombe",
+         "away_team":"Stevenage",
+         "number":46,
+         "kickoff":"2018-05-05T15:00:00.000+01:00",
+         "away_team_display":"Stevenage",
+         "home_team_display":"Wycombe",
+         "external_id":"2530841",
+         "id":107112
+      },
+      {
+         "home_team":"Atl Madrid",
+         "away_team":"Espanyol",
+         "number":47,
+         "kickoff":"2018-05-06T15:15:00.000+01:00",
+         "away_team_display":"Espanyol",
+         "home_team_display":"Atl Madrid",
+         "external_id":"2580892",
+         "id":115872
+      },
+      {
+         "home_team":"Barcelona",
+         "away_team":"Real Madrid",
+         "number":48,
+         "kickoff":"2018-05-06T19:45:00.000+01:00",
+         "away_team_display":"Real Madrid",
+         "home_team_display":"Barcelona",
+         "external_id":"2580897",
+         "id":115877
+      },
+      {
+         "home_team":"Villarreal",
+         "away_team":"Valencia",
+         "number":49,
+         "kickoff":"2018-05-05T19:45:00.000+01:00",
+         "away_team_display":"Valencia",
+         "home_team_display":"Villarreal",
+         "external_id":"2580899",
+         "id":115879
+      }
+   ]
+}
