@@ -4,6 +4,8 @@ from io import StringIO
 import json
 from pprint import pprint
 
+import bfConnector 
+
 
 # *****************************************************
 # the following code block is to scrape from a website 
@@ -35,9 +37,26 @@ with open('example_input.json') as json_data:
 
 # *****************************************************
 
-for fixture in fixtures['fixtures'] :
-	print(fixture['home_team'])
-#io = StringIO("example_input.json")
-#json.loads(io)
+notFoundList = []
 
+#fixtures = json.loads('{ "fixtures": [{"home_team": "Inter Milan", "away_team": "Sassuolo"}]}')
+
+for fixture in fixtures['fixtures'] :
+	
+	
+	homeTeam = fixture['home_team']
+	awayTeam = fixture['away_team']
+		
+	print( fixture['home_team'] + '\tv\t' + fixture['away_team'] )	
+	event = bfConnector.getEvent(homeTeam, awayTeam)
+	
+	if not event :
+		notFoundList.append( "'"+ fixture['home_team'] + "' : " + fixture['away_team'] + "' ', ")
+					
+	else :
+		print('\tevent Id :\tevent name')
+		print('\t' + event[0] + '\t' + event[1])
+
+print('Not Found List :')	
+print(notFoundList)
 
