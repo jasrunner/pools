@@ -59,5 +59,11 @@ def getEvent(homeTeam, awayTeam):
 	return event
 	
 
-
+def getScoreDrawOdds( eventIdList):
+	
+	setOfEvents = []
+	for e in eventIdList :
+		setOfEvents.append(e[0])
+		print(setOfEvents)
+	return strategy.getScoreDrawOdds(setOfEvents)
 

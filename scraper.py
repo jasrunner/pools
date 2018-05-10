@@ -6,7 +6,7 @@ from pprint import pprint
 
 import bfConnector 
 
-
+'''
 # *****************************************************
 # the following code block is to scrape from a website 
 theUrl = 'https://www.footballpools.com/pool-games/classic-pools'
@@ -41,6 +41,8 @@ notFoundList = []
 
 #fixtures = json.loads('{ "fixtures": [{"home_team": "Inter Milan", "away_team": "Sassuolo"}]}')
 
+eventList = []
+
 for fixture in fixtures['fixtures'] :
 	
 	
@@ -49,6 +51,8 @@ for fixture in fixtures['fixtures'] :
 		
 	print( fixture['home_team'] + '\tv\t' + fixture['away_team'] )	
 	event = bfConnector.getEvent(homeTeam, awayTeam)
+	
+	eventList.append(event)
 	
 	if not event :
 		notFoundList.append( "'"+ fixture['home_team'] + "' : " + fixture['away_team'] + "' ', ")
@@ -59,4 +63,10 @@ for fixture in fixtures['fixtures'] :
 
 print('Not Found List :')	
 print(notFoundList)
+'''
+eventList = []
+eventList.append([ ('28694906', 'Burnley v Bournemouth')])
 
+print('getting draw score odds for ' + str(eventList[0]))
+#bfConnector.getScoreDrawOdds(eventList)
+bfConnector.getScoreDrawOdds(eventList[0])
