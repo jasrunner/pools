@@ -64,6 +64,10 @@ def getScoreDrawOdds( eventIdList):
 	setOfEvents = []
 	for e in eventIdList :
 		setOfEvents.append(e[0])
-		print(setOfEvents)
-	return strategy.getScoreDrawOdds(setOfEvents)
-
+		#print(setOfEvents)
+		
+	
+	return strategy.getMatchOdds(setOfEvents)
+	
+	#return strategy.getScoreDrawOdds(setOfEvents) 
+	

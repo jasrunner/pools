@@ -6,7 +6,7 @@ from pprint import pprint
 
 import bfConnector 
 
-'''
+
 # *****************************************************
 # the following code block is to scrape from a website 
 theUrl = 'https://www.footballpools.com/pool-games/classic-pools'
@@ -42,31 +42,43 @@ notFoundList = []
 #fixtures = json.loads('{ "fixtures": [{"home_team": "Inter Milan", "away_team": "Sassuolo"}]}')
 
 eventList = []
-
+#print(fixtures['fixtures'])
 for fixture in fixtures['fixtures'] :
 	
 	
 	homeTeam = fixture['home_team']
 	awayTeam = fixture['away_team']
+	number = fixture['number']
 		
 	print( fixture['home_team'] + '\tv\t' + fixture['away_team'] )	
 	event = bfConnector.getEvent(homeTeam, awayTeam)
 	
-	eventList.append(event)
+	
 	
 	if not event :
 		notFoundList.append( "'"+ fixture['home_team'] + "' : " + fixture['away_team'] + "' ', ")
 					
 	else :
+		eventList.append(event)
 		print('\tevent Id :\tevent name')
 		print('\t' + event[0] + '\t' + event[1])
 
 print('Not Found List :')	
 print(notFoundList)
 '''
-eventList = []
-eventList.append([ ('28694906', 'Burnley v Bournemouth')])
+#print(eventList)
+eventList = [['28696124', 'Chelsea v Man Utd'], ['28722665', 'Bayern Munich v Eintracht Frankfurt']]
+'''
+#print('getting draw score odds for ' + str(eventList[0]))
+#bfConnector.getScoreDrawOdds(eventList[0])
 
-print('getting draw score odds for ' + str(eventList[0]))
+print('getting draw score odds ')
 #bfConnector.getScoreDrawOdds(eventList)
-bfConnector.getScoreDrawOdds(eventList[0])
+marketObjs = bfConnector.getScoreDrawOdds(eventList)
+marketObjs.sort(key=lambda x: x.currentScore, reverse=False)
+count = 0
+for m in marketObjs :
+	if count is 10 :
+			print('-----------------------')
+	print( str(int(round(m.currentScore))) + '\t:\t' + m.name )
+	count += 1
