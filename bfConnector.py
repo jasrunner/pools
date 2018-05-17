@@ -64,10 +64,22 @@ def getScoreDrawOdds( eventIdList):
 	setOfEvents = []
 	for e in eventIdList :
 		setOfEvents.append(e[0])
-		#print(setOfEvents)
 		
+	marketObjects = strategy.getScoreDrawOdds(setOfEvents)
+	marketObjects.sort(key=lambda x: x.currentScore, reverse=True)
+		
+	return  marketObjects
+
+		
+def getMatchOdds( eventIdList):
 	
-	return strategy.getMatchOdds(setOfEvents)
+	setOfEvents = []
+	for e in eventIdList :
+		setOfEvents.append(e[0])
+
+	marketObjs = strategy.getMatchOdds(setOfEvents)
+	marketObjs.sort(key=lambda x: x.currentScore, reverse=False)
 	
-	#return strategy.getScoreDrawOdds(setOfEvents) 
+	return marketObjs
+	 
 	

@@ -4,7 +4,9 @@ from io import StringIO
 import json
 from pprint import pprint
 
+import operator
 import bfConnector 
+import drawClass
 
 
 # *****************************************************
@@ -42,6 +44,8 @@ notFoundList = []
 #fixtures = json.loads('{ "fixtures": [{"home_team": "Inter Milan", "away_team": "Sassuolo"}]}')
 
 eventList = []
+eventDict = dict()
+
 #print(fixtures['fixtures'])
 for fixture in fixtures['fixtures'] :
 	
@@ -56,29 +60,70 @@ for fixture in fixtures['fixtures'] :
 	
 	
 	if not event :
-		notFoundList.append( "'"+ fixture['home_team'] + "' : " + fixture['away_team'] + "' ', ")
+		notFoundList.append(  fixture['home_team'] + " v " + fixture['away_team'] + ", ")
 					
 	else :
 		eventList.append(event)
-		print('\tevent Id :\tevent name')
-		print('\t' + event[0] + '\t' + event[1])
+		
+		eventDict.update( { event[1] : drawClass.Draw(number, fixture['home_team'] + ' v ' + fixture['away_team'] ) } )
 
+#print(str(eventDict))
 print('Not Found List :')	
 print(notFoundList)
 '''
 #print(eventList)
 eventList = [['28696124', 'Chelsea v Man Utd'], ['28722665', 'Bayern Munich v Eintracht Frankfurt']]
 '''
-#print('getting draw score odds for ' + str(eventList[0]))
-#bfConnector.getScoreDrawOdds(eventList[0])
 
 print('getting draw score odds ')
-#bfConnector.getScoreDrawOdds(eventList)
-marketObjs = bfConnector.getScoreDrawOdds(eventList)
-marketObjs.sort(key=lambda x: x.currentScore, reverse=False)
+
+scoreDrawObjects = bfConnector.getScoreDrawOdds(eventList)
+matchOddsObjects = bfConnector.getMatchOdds(eventList)
+
+
 count = 0
-for m in marketObjs :
-	if count is 10 :
-			print('-----------------------')
-	print( str(int(round(m.currentScore))) + '\t:\t' + m.name )
+for m in scoreDrawObjects :
+	
 	count += 1
+	lookup = eventDict.get(m.name) 
+	lookup.scoreOdds = count
+	
+
+count = 0
+for m in matchOddsObjects :
+
+	count += 1	
+	lookup = eventDict.get(m.name) 
+	lookup.matchOdds = count
+	lookup.totalOdds = lookup.matchOdds + lookup.scoreOdds
+
+
+print('Full Results')
+for event in (sorted(eventDict.values(), key=operator.attrgetter('totalOdds'))):
+	print(event)
+	
+
+print('\nTop 10 by scoreOdds')
+count = 0
+for event in (sorted(eventDict.values(), key=operator.attrgetter('scoreOdds'))):
+	#print(event)
+	print(str(event.id) + '\t:\t' + str(event.scoreOdds) + '\t:\t' + event.name )
+	count += 1
+	if count == 10 :
+		break
+	
+print('\nTop 10 by matchOdds')
+count = 0
+for event in (sorted(eventDict.values(), key=operator.attrgetter('matchOdds'))):
+	print(str(event.id) + '\t:\t' + str(event.matchOdds) + '\t:\t' + event.name )
+	count += 1
+	if count == 10 :
+		break
+	
+print('\nTop 10 by totalOdds')
+count = 0
+for event in (sorted(eventDict.values(), key=operator.attrgetter('totalOdds'))):
+	print(str(event.id) + '\t:\t' + str(event.totalOdds) + '\t:\t' + event.name )
+	count += 1
+	if count == 10 :
+		break
